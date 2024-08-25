@@ -17,7 +17,7 @@ export default function useCalculate() {
         const operations = ['/', '-', '+', 'x'];
 
         if (value === '(') {
-          const hasNoCloseBracket = prev.split('').reduce((acc, value) => {
+          const hasNoCloseBracket = prev.split('').reduce((_, value) => {
             if (value === '(') return true;
 
             return false;
